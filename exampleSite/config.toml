@@ -67,7 +67,6 @@ title = 'hugo-service-industry'
   APIkey = "AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0"
   latitude = "45.4502528"
   longitude = "-122.783407"
-  pinImage = "images/pin.png"
 
   # Social icons
   [[params.social]]

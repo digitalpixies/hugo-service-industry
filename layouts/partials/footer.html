@@ -21,8 +21,7 @@
             {{ range $socialIcon }}
             <li>
               <a target="_blank" href="{{ .url }}">
-                <i
-                  class="{{ .icon }}">
+                <i class="{{ .icon }}">
                 </i>
               </a>
             </li>
@@ -39,10 +38,10 @@
           <p> {{ replace .Site.Params.copyright "{year}" now.Year | safeHTML }} </p>
           <ul>
             {{ $sitemap := .Site.Menus.sitemap }}
-						{{ range $sitemap }}
-						  <li>
-                <a href="{{ .URL | absURL }}">{{ .Name }}</a>
-              </li>
+            {{ range $sitemap }}
+            <li>
+              <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+            </li>
             {{ end }}
           </ul>
         </div>
@@ -53,19 +52,18 @@
 
 
 {{ "<!-- Non Critical CSS -->" | safeHTML }}
-{{$style :=  resources.Get "scss/non-critical.scss" | resources.ToCSS | resources.Minify }}
+{{$style := resources.Get "scss/non-critical.scss" | resources.ToCSS | resources.Minify }}
 <link href="{{ $style.Permalink }}" rel="stylesheet" />
-<script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.Map.APIkey }}&libraries=geometry">
-</script>
 {{ "<!-- VENDOR JS -->" | safeHTML }}
-<script src="{{"vendor/jQuery/jquery.min.js" | absURL }}"></script>
-<script src="{{"vendor/bootstrap/bootstrap.min.js" | absURL }}"></script>
-<script src="{{"vendor/slick/slick.min.js" | absURL}}"></script>
-<script src="{{"vendor/aos/aos.js" | absURL}}"></script>
-<script src="{{"vendor/match-height/match-height.js" | absURL}}"></script>
-<script src="{{"vendor/magnific-popup/magnific-popup.min.js" | absURL}}"></script>
-<script src="{{"vendor/g-map/gmap.js" | absURL}}"></script>
+<script src="{{" vendor/jQuery/jquery.min.js" | absURL }}"></script>
+<script src="{{" vendor/bootstrap/bootstrap.min.js" | absURL }}"></script>
+<script src="{{" vendor/slick/slick.min.js" | absURL}}"></script>
+<script src="{{" vendor/aos/aos.js" | absURL}}"></script>
+<script src="{{" vendor/match-height/match-height.js" | absURL}}"></script>
+<script src="{{" vendor/magnific-popup/magnific-popup.min.js" | absURL}}"></script>
+<script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+    ({ key: "{{ .Site.Params.Map.APIkey }}", v: "weekly" });</script>
 <!-- {{ $formhandler := resources.Get "js/formhandler.js" | minify}} 
 <script src="{{ $formhandler.Permalink}}"></script> -->
-{{ $script := resources.Get "js/script.js" | minify}} 
+{{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink}}"></script>
