@@ -2,9 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-12">
+        {{ with .Site.Params.footerlogo }}
         <div class="footer-logo">
-          <img class="img-fluid" src="{{ .Site.Params.footerlogo | absURL}}" alt="logo">
+          <img class="img-fluid" src="{{ . }}" alt="logo">
         </div>
+        {{ end }}
         <p class="footer-description">
           {{ .Site.Params.footerDescription}}
         </p>
