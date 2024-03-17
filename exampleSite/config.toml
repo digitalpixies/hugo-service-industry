@@ -62,6 +62,7 @@ title = 'hugo-service-industry'
   openingDesc = "Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days."
   openingHours = "We are open from 7am — 7pm week days."
   phone = "+(448) 833 5272 332"
+  fax = "+(448) 833 5272 332"
 
   [params.map]
   APIkey = "AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0"

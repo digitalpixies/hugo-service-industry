@@ -15,6 +15,7 @@
           <ul>
             {{ with $address.email }}<li><i class="ti-email"></i>&nbsp;<a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
             {{ with $address.phone }}<li><i class="ti-mobile"></i>&nbsp;<a href="tel:{{ . }}">{{ . }}</a></li>{{ end }}
+            {{ with $address.fax }}<li><i class="ti-printer"></i>&nbsp;<a href="tel:{{ . }}">{{ . }}</a></li>{{ end }}
           </ul>
           <p>
             {{ $address.openingDesc }}
