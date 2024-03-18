@@ -26,9 +26,9 @@ Fork of theme from coHub.
 - Blog Support.
 - Well formatted code.
 - Easy Customization.
-- FabForm.io [static website forms](https://fabform.io).
 - Google Analytics.
 - Crafted for Personal Portfolio
+- Icons by [themify.me](https://themify.me/themify-icons)
 
 ## Licensing
 
