@@ -34,7 +34,6 @@ menu:
       url: /terms/
       weight: 2
 params:
-  aboutPageURL: blog
   copyright: © {year} your-website-here.lan
   googleAnalytics: G-9999999999
   logo: images/logo.png
