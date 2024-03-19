@@ -1,0 +1,30 @@
+name: Hugo Theme for Service Industry
+license: MIT
+licenselink: https://github.com/digitalpixies/hugo-service-industry/blob/master/LICENSE
+description: Theme with responsive design for service type industries. Forked from CoHub
+homepage: https://github.com/digitalpixies/hugo-service-industry
+tags:
+  - clean
+  - minimal
+  - blog
+  - responsive
+  - personal
+  - google analytics
+  - bootstrap
+  - portfolio
+  - white
+  - modern
+  - creative
+features:
+  - bootstrap 4
+  - responsive design
+  - blog
+  - responsive
+  - minimal
+  - hugo-theme
+  - portfolio
+  - creative
+min_version: 0.41.0
+author:
+  name: Robert Huie
+  homepage: https://github.com/digitalpixies
